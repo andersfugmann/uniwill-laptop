@@ -49,7 +49,7 @@ static const struct key_entry uniwill_wmi_keymap[] = {
 	{ KE_KEY,	UNIWILL_OSD_RFKILL,			{ KEY_RFKILL }},
 
 	/* Reported when user wants to cycle the platform profile */
-	{ KE_IGNORE,	UNIWILL_OSD_PERFORMANCE_MODE_TOGGLE,	{ KEY_UNKNOWN }},
+	{ KE_KEY,	UNIWILL_OSD_PERFORMANCE_MODE_TOGGLE,	{ KEY_X }},
 
 	/* Reported when the user wants to adjust the brightness of the keyboard */
 	{ KE_KEY,	UNIWILL_OSD_KBDILLUMDOWN,		{ KEY_KBDILLUMDOWN }},
