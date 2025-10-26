@@ -1448,6 +1448,18 @@ static const struct dmi_system_id uniwill_dmi_table[] __initconst = {
 					UNIWILL_FEATURE_BATTERY |
 					UNIWILL_FEATURE_HWMON),
 	},
+		{
+		.ident = "XMG Evo 14 (E25) / Tuxedo Infinity",
+		.matches = {
+	                DMI_EXACT_MATCH(DMI_SYS_VENDOR, "SchenkerTechnologiesGmbH"),
+			DMI_EXACT_MATCH(DMI_PRODUCT_NAME, "XMG EVO (E25)"),
+		},
+		.driver_data = (void *)(UNIWILL_FEATURE_FN_LOCK |
+					UNIWILL_FEATURE_SUPER_KEY_LOCK |
+					UNIWILL_FEATURE_TOUCHPAD_TOGGLE |
+					UNIWILL_FEATURE_BATTERY |
+					UNIWILL_FEATURE_HWMON),
+	},
 	{ }
 };
 MODULE_DEVICE_TABLE(dmi, uniwill_dmi_table);
