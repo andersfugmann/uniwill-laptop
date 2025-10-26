@@ -1,5 +1,6 @@
-CFLAGS_uniwill-laptop.o := -DDEBUG
-CFLAGS_uniwill-wmi.o := -DDEBUG
+#DEBUG_FLAG = -DDEBUG
+CFLAGS_uniwill-laptop.o := $(DEBUG_FLAG)
+CFLAGS_uniwill-wmi.o := $(DEBUG_FLAG)
 obj-m += uniwill-laptop.o
 obj-m += uniwill-wmi.o
 
