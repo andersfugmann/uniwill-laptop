@@ -14,6 +14,6 @@ dkms:
 
 load: all
 	sudo rmmod uniwill_laptop || true
-	sudo rmmod uniwill_wmi || true
-	sudo rmmod uniwill_acpi || true
+	#sudo rmmod uniwill_wmi || true
+	#sudo rmmod uniwill_acpi || true
 	sudo insmod ./uniwill-laptop.ko
